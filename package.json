@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
+    "client-install": "yarn install --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "repository": "git@github.com:mohur/shoppingList.git",
   "author": "mohur <m.ashrahfi@gmail.com>",
