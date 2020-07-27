@@ -1,0 +1,1 @@
+Adds an x towards the delete button
