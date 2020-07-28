@@ -1,0 +1,1 @@
+will add item with ...state.items (making a copy and pasting it)
