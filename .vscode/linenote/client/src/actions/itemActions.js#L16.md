@@ -1,0 +1,1 @@
+passing along data (item) because we are adding. item comes from ItemModal component in components/ItemModals. Deleted uuid from ItemModal because mongoDB creates own ID

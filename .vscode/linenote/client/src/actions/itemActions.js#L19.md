@@ -1,0 +1,1 @@
+res.data is from routes/api/items. Returns new item and sends to reducer. at reducers/itemReducer payload becomes the new item and gets added
