@@ -1,0 +1,1 @@
+making a copy of current state and adding new items from action.payload
