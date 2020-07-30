@@ -1,0 +1,1 @@
+when typing inside input, onChange fires off. Also sets state of name to whatever the input has

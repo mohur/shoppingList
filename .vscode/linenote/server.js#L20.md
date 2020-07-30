@@ -1,0 +1,1 @@
+sets up folder for app.get
