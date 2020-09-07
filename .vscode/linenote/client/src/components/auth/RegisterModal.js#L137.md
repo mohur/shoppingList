@@ -1,0 +1,1 @@
+access to this.props.clearErrors 

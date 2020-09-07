@@ -1,0 +1,1 @@
+signs user out after 3600 seconds

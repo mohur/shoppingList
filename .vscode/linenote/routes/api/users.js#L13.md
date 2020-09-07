@@ -1,0 +1,1 @@
+check for existing user with user model and findOne method if email is same as email var

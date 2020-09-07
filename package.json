@@ -1,0 +1,31 @@
+{
+  "name": "shoppinglist",
+  "version": "1.0.0",
+  "main": "server.js",
+  "engines": {
+    "node": "12.x",
+    "yarn": "1.x"
+  },
+  "scripts": {
+    "client-install": "yarn install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+    "heroku-postbuild": "YARN_CONFIG_PRODUCTION=false yarn install --cwd client && yarn --cwd client build"
+  },
+  "repository": "git@github.com:mohur/shoppingList.git",
+  "author": "mohur <m.ashrahfi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.2.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.24"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,1 @@
+get the user from backend to the point where we fetch the user

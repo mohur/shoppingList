@@ -1,0 +1,1 @@
+brute forces the TransitionGroup component CSS values

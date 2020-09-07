@@ -1,0 +1,1 @@
+NODE_ENV is an environement variable made popular by the express framework. When the node app is running, it checks the value of the environment variable and do different things based on the value. NODE_ENV is used to determine whether its in production or development.

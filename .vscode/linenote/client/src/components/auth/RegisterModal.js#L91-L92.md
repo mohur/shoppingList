@@ -1,0 +1,1 @@
+isAuthenticated and error is coming from index.js in reducer folder

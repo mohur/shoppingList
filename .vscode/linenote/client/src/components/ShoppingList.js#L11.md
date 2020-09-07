@@ -1,0 +1,1 @@
+actions brought to the component will be stored as a prop and added to propTypes

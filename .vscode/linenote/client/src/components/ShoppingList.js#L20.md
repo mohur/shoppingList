@@ -1,0 +1,1 @@
+deleteItem is from actions/itemActions function
