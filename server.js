@@ -10,7 +10,7 @@ app.use(express.json());
 const db = config.get('mongoURI');
 
 mongoose
-    .connect(db, { 
+    .connect(process.env.MONGODB_URI || db, { 
         useUnifiedTopology: true,  
         useNewUrlParser: true,
         useCreateIndex: true
