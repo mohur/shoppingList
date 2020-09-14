@@ -19,8 +19,17 @@ class ShoppingList extends Component {
         isAuthenticated: PropTypes.bool
     }
 
-    componentDidMount() {
-        this.props.getItems();
+    // componentDidMount() {
+    //     setTimeout(() => {
+    //         console.log(this.props.userId); 
+    //     }, 500)
+    //     this.props.getItems();
+    // }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.userId !== prevProps.userId) {
+            this.props.getItems(this.props.userId);
+        }
     }
 
     onDeleteClick = (id) => {
@@ -28,7 +37,8 @@ class ShoppingList extends Component {
     }
 
     render () {
-        const { items } = this.props.item;
+        const { items = [] } = this.props.item;
+        console.log(items)
         return(
             <Container>
                 <ListGroup>
@@ -63,7 +73,8 @@ class ShoppingList extends Component {
 
 const mapToStateProps = (state) => ({
     item: state.item,
-    isAuthenticated: state.auth.isAuthenticated
+    isAuthenticated: state.auth.isAuthenticated,
+    userId: state.auth.user ? state.auth.user._id : null
 })
 
 export default connect(mapToStateProps, { getItems, deleteItem })(ShoppingList);
