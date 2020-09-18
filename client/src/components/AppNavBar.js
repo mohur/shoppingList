@@ -14,6 +14,7 @@ import PropTypes from 'prop-types';
 import RegisterModal from './auth/RegisterModal';
 import Logout from './auth/Logout';
 import LoginModal from './auth/LoginModal';
+import styles from './AppNavBar.css'
  class AppNavBar extends Component {
     state = {
         isOpen: false
@@ -59,7 +60,7 @@ import LoginModal from './auth/LoginModal';
             <div>
                 <Navbar color="dark" dark expand="sm" className="mb-5"> 
                     <Container>
-                        <NavbarBrand href="/">Shopping List</NavbarBrand>
+                        <NavLink to="/"><img src={require("../images/logo.png")}/></NavLink>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar/>
                             <Nav className="ml-auto" navbar>
@@ -68,6 +69,7 @@ import LoginModal from './auth/LoginModal';
                     </Container>
                 </Navbar>
             </div>
+            
         );
     }
  }

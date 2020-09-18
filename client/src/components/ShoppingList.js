@@ -12,7 +12,6 @@ import PropTypes from 'prop-types';
 
 
 class ShoppingList extends Component {
-    
     static propTypes = {
         getItems: PropTypes.func.isRequired,
         item: PropTypes.object.isRequired,
@@ -38,7 +37,6 @@ class ShoppingList extends Component {
 
     render () {
         const { items = [] } = this.props.item;
-        console.log(items)
         return(
             <Container>
                 <ListGroup>

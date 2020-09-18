@@ -46,7 +46,6 @@ class ItemModal extends Component {
     }
 
     render() {
-        if (this.props.userId) {
             return (
                 <div>
                 { this.props.isAuthenticated ? (
@@ -57,7 +56,7 @@ class ItemModal extends Component {
                     >Add Item
                     </Button>
                 ) : (  <h4 className="mb-3 ml-4">
-                            Please log in to manage shopping list.
+                            Please log in or register to manage your very own shopping list.
                         </h4>
                     )}
                     <Modal
@@ -88,11 +87,6 @@ class ItemModal extends Component {
                     </Modal>
                 </div>
             )
-        } else {
-            return (
-                <h2>Log in</h2>
-            )
-        }
     }
 }
 
