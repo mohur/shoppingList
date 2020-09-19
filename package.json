@@ -12,7 +12,7 @@
     "server": "nodemon server.js",
     "client": "yarn --cwd client start",
     "dev": "concurrently \"yarn run server\" \"yarn run client\"",
-    "heroku-postbuild": "YARN_CONFIG_PRODUCTION=false yarn install --cwd client && yarn --cwd client build"
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "repository": "git@github.com:mohur/shoppingList.git",
   "author": "mohur <m.ashrahfi@gmail.com>",
